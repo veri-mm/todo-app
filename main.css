@@ -1,0 +1,142 @@
+:root{
+    --pink-gradient: #ff0072;
+    --purple-gradient: #9d3ea8;
+    --blue-gradient: #00a2ff;
+    --background: #ebebeb;
+    --list: #ffffff;
+    --line: #cccccc;
+    --line-darker: #b6b6b6;
+    --pink-darker: #e70067;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Calibri, sans-serif;
+    background-color: var(--background);
+}
+
+header{
+    background-image: linear-gradient(to right, var(--pink-gradient), var(--purple-gradient), var(--blue-gradient));
+
+    height: 10rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    color: var(--list); 
+    font-size: 4.5rem;
+}
+
+section{
+    background-color: var(--list);
+
+    border-radius: 1rem;
+
+    width: 50%;
+    margin: -1rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question{
+    width: 100%;
+
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-form{
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+.add-button{
+    background-color: var(--pink-gradient);
+    color: var(--list);
+
+    width: 3rem;
+    height: 1.5rem;
+
+    border: transparent;
+    border-radius: .1rem;
+
+    cursor: pointer;
+}
+
+.add-button:hover{
+    background-color: var(--pink-darker);
+}
+
+.input{
+    border: solid .1rem var(--line);
+    border-radius: .2rem;
+
+    width: 90%;
+    height: 1.5rem;
+}
+
+.list{
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+.list .todo-items{
+    list-style-type: none;
+}
+
+.list .item{
+   background-color: var(--background);
+
+   height: 1.5rem;
+   border-radius: .1rem;
+   margin-bottom: .5rem;
+
+   vertical-align: middle;
+   
+   cursor: pointer;
+}
+
+.checkbox{
+    margin: 0 .8rem;
+    vertical-align: middle;
+
+}
+
+.delete-button{
+    background-color: var(--pink-gradient);
+    color: var(--list);
+
+    border: none;
+    border-radius: .1rem;
+
+    padding: .2rem ;
+    margin-left: 1rem;
+
+    float: right;
+}
+
+.delete-button:hover{
+    background-color: var(--pink-darker);
+    cursor: pointer;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
